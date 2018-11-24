@@ -9,3 +9,9 @@
 
 ; Exercise 2
 
+(define prefix "hello")
+(define suffix "world")
+
+(define (concat prefix suffix) (string-append prefix "_" suffix))
+
+(concat prefix suffix)
