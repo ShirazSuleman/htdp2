@@ -12,6 +12,15 @@
 (define prefix "hello")
 (define suffix "world")
 
-(define (concat prefix suffix) (string-append prefix "_" suffix))
+(string-append prefix "_" suffix)
 
-(concat prefix suffix)
+; Exercise 3
+
+(define str "helloworld")
+(define i 5)
+
+(string-append (substring str 0 i) "_" (substring str i))
+
+; Exercise 4
+
+(string-append (substring str 0 i) (substring str (add1 i)))
